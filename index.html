@@ -298,6 +298,33 @@
                             <use href="./images/symbol-defso.svg#close-black"></use>
                         </svg>
                     </button>
+                    
+                    <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+                <form class="form">
+                    <div class="form-input">
+                        <label for="user-name" class="label">Имя</label>
+                        <input type="text" name="user-name" id="user-name">
+                   </div>
+                   <div class="form-input">
+                    <label for="phone" class="label">Телефон</label>
+                    <input type="tel" name="phone" id="phone">
+                   </div>
+                   <div class="form-input">
+                    <label for="email" class="label">Почта</label>
+                    <input type="email" name="email" id="email">
+                   </div>
+                   <div class="form-input">
+                    <label for="comment" class="label">Комментарий</label>
+                    <textarea name="comment" id="comment" rows="5" placeholder="Введите текст"></textarea>
+                   </div>         
+                 <div>         
+                 <input type="checkbox" name="rules" id="rules">
+                 <label for="rules" class="label-check">Соглашаюсь с рассылкой и принимаю <a href="" class="label-check-link">Условия договора</a></label>
+                </div>
+                <div class="button-mod">
+                 <button type="submit" class="button-modal">Отправить</button>
+                </div>
+                </form>
                 </div>
             </div>
         
@@ -349,6 +376,22 @@
                                 </svg></a>
                         </li>
                     </ul>
+                </div>
+                <!--форма подписки в подвале-->
+                <div class="footer-form"> 
+                <form>
+                    <p class="footer-link">подпишитесь на рассылку</p>
+                    <div class="foot-input">
+                    <label for="mail-foot"></label>
+                    <input type="email" name="mail-foot" id="mail-foot" placeholder="E-mail" >
+                
+                    <button type="submit" class="button-foot"> <span class="button-foot-txt">Подписаться</span> 
+                        <svg class="foot-icon-send" width="24px" height="24px">
+                            <use href="./images/symbol-defso.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                    </div>
+                </form>
                 </div>
             </div>
         </div>
