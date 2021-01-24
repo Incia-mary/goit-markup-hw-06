@@ -303,23 +303,41 @@
                 <form class="form">
                     <div class="form-input">
                         <label for="user-name" class="label">Имя</label>
-                        <input type="text" name="user-name" id="user-name">
-                   </div>
+                        
+                        <svg class="icon-form" width="18px" height="18px">
+                            <use href="./images/symbol-defso.svg#person"></use>
+                        </svg>
+                        <input type="text" name="user-name" id="user-name" class="input-txt">
+                    </div>
                    <div class="form-input">
                     <label for="phone" class="label">Телефон</label>
-                    <input type="tel" name="phone" id="phone">
+                    
+                    <svg class="icon-form" width="18px" height="18px">
+                        <use href="./images/symbol-defso.svg#phone"></use>
+                    </svg>
+                    <input type="tel" name="phone" id="phone" class="input-txt">
                    </div>
                    <div class="form-input">
                     <label for="email" class="label">Почта</label>
-                    <input type="email" name="email" id="email">
+                    
+                    <svg class="icon-form" width="18px" height="18px">
+                        <use href="./images/symbol-defso.svg#email"></use>
+                    </svg>
+                    <input type="email" name="email" id="email" class="input-txt">
                    </div>
                    <div class="form-input">
                     <label for="comment" class="label">Комментарий</label>
                     <textarea name="comment" id="comment" rows="5" placeholder="Введите текст"></textarea>
                    </div>         
-                 <div>         
-                 <input type="checkbox" name="rules" id="rules">
-                 <label for="rules" class="label-check">Соглашаюсь с рассылкой и принимаю <a href="" class="label-check-link">Условия договора</a></label>
+                 <div class="form-check">         
+                                
+                     <input type="checkbox" name="rules" class="checkbox"/>
+                     <svg class="check-icon">
+                        <use href="./images/symbol-defso.svg#checkbox-on"></use>
+                    </svg> 
+                    <label class="label-checkbox"><span class="label-check">Соглашаюсь с рассылкой и принимаю</span> <a href=""
+                            class="label-check-link">Условия договора</a>
+                    </label>
                 </div>
                 <div class="button-mod">
                  <button type="submit" class="button-modal">Отправить</button>
@@ -379,13 +397,13 @@
                 </div>
                 <!--форма подписки в подвале-->
                 <div class="footer-form"> 
-                <form>
+                <form class="foot-form">
                     <p class="footer-link">подпишитесь на рассылку</p>
                     <div class="foot-input">
                     <label for="mail-foot"></label>
                     <input type="email" name="mail-foot" id="mail-foot" placeholder="E-mail" >
                 
-                    <button type="submit" class="button-foot"> <span class="button-foot-txt">Подписаться</span> 
+                    <button type="submit" class="button-foot">Подписаться
                         <svg class="foot-icon-send" width="24px" height="24px">
                             <use href="./images/symbol-defso.svg#icon-send"></use>
                         </svg>
