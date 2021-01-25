@@ -690,7 +690,7 @@ ul {
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-
+  color: #ffffff;
   background-color: #2f303a;
 }
 
@@ -838,7 +838,8 @@ ul {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-thumb:hover .project-over {
+.project-card:hover .project-over,
+.project-card:focus .project-over {
   transform: translateY(0);
 }
 
@@ -888,8 +889,8 @@ ul {
 
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 601px;
+  min-width: 528px;
+  min-height: 581px;
 
   background-color: #ffffff;
 
@@ -940,16 +941,16 @@ ul {
   color: #212121;
 }
 
-/*.button-mod {
-  display: flex;
-  align-items: center;
-  text-align: center;
-}*/
-.button-modal {
-  /*display: flex;
-  align-items: center;
-  text-align: center;*/
 
+.button-mod {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  margin-top: 20px;
+}
+
+.button-modal {
   border: 0px;
   border-radius: 4px;
   padding: 10px 55px;
@@ -971,6 +972,7 @@ ul {
 textarea {
   resize: none;
   padding: 12px 16px;
+  margin-bottom: 0;
 }
 
 .form {
@@ -1103,17 +1105,7 @@ textarea {
   color: var(--accent-color);
 }
 
-.button-mod {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 0;
-  margin-top: 30px;
-}
 
-.form-check {
-  position: relative;
-}
 .checkbox {
   position: absolute;
   width: 1px;
@@ -1125,29 +1117,46 @@ textarea {
   overflow: hidden;
 }
 
-.check-icon {
+/*.check-icon {
   display: inline-block;
   width: 16px;
   height: 15px;
   margin-right: 8px;
  align-items: center;
-  border: 2px solid #212121;
+  border: 2px solid #777777;
   border-radius: 2px;
   cursor: pointer;
   fill: currentColor;
+}*/
+
+.label-checkbox {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  
 }
 
-.label-checkbox::after {
+.label-checkbox::before {
   content: "";
   display: inline-block;
   width: 16px;
   height: 15px;
+  margin-right: 8px;
   align-items: center;
+  justify-content: center;
+
+  border: 2px solid #212121;
+  border-radius: 2px;
+
+  cursor: pointer;
+  
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
-.checkbox:checked ~ .label-checkbox::after {
-  background-image: url("../images/checkbox-on");
+.checkbox:checked ~ .label-checkbox::before {
+  background-image: url("../images/checkbox-on.svg");
   background-color: var(--accent-color);
   border-color: transparent;
   background-size: contain;

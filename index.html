@@ -297,8 +297,7 @@
                         <svg class="close-icon" width="18px" height="18px"> 
                             <use href="./images/symbol-defso.svg#close-black"></use>
                         </svg>
-                    </button>
-                    
+                    </button>                   
                     <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
                 <form class="form">
                     <div class="form-input">
@@ -327,17 +326,17 @@
                    </div>
                    <div class="form-input">
                     <label for="comment" class="label">Комментарий</label>
-                    <textarea name="comment" id="comment" rows="5" placeholder="Введите текст"></textarea>
+                    <textarea name="comment" id="comment" rows="4" placeholder="Введите текст"></textarea>
                    </div>         
-                 <div class="form-check">         
+                 <div class="form-check">     
                                 
-                     <input type="checkbox" name="rules" class="checkbox"/>
-                     <svg class="check-icon">
+                     <input type="checkbox" name="rules" id="checkbox" class="checkbox"/>
+                    <!-- <svg class="check-icon">
                         <use href="./images/symbol-defso.svg#checkbox-on"></use>
-                    </svg> 
-                    <label class="label-checkbox"><span class="label-check">Соглашаюсь с рассылкой и принимаю</span> <a href=""
-                            class="label-check-link">Условия договора</a>
-                    </label>
+                    </svg> -->
+                    <label for="checkbox" class="label-checkbox"><span class="label-check">Соглашаюсь с рассылкой и принимаю </span> <a href=""
+                            class="label-check-link"> Условия договора</a>
+                    </label> 
                 </div>
                 <div class="button-mod">
                  <button type="submit" class="button-modal">Отправить</button>
